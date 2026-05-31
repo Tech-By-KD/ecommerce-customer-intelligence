@@ -1,0 +1,37 @@
+cart_id,user_id,cart_date,product_id,quantity,unit_price,product_name,category,line_total,order_status,ingested_at,month
+1,1,2026-04-23 16:18:30,1,4,109.95,Fjallraven - Foldsack No. 1 Backpack,men's clothing,439.8,Delivered,2026-05-31T16:18:30.666667,2026-04
+1,1,2026-04-23 16:18:30,2,1,22.3,Mens Casual Premium Slim Fit T-Shirts,men's clothing,22.3,Delivered,2026-05-31T16:18:30.666667,2026-04
+1,1,2026-04-23 16:18:30,3,6,55.99,Mens Cotton Jacket,men's clothing,335.94,Delivered,2026-05-31T16:18:30.666667,2026-04
+2,1,2025-07-27 16:18:30,2,2,22.3,Mens Casual Premium Slim Fit T-Shirts,men's clothing,44.6,Delivered,2026-05-31T16:18:30.666667,2025-07
+2,1,2025-07-27 16:18:30,9,1,64.0,WD 2TB Elements Portable External Hard Drive,electronics,64.0,Processing,2026-05-31T16:18:30.666667,2025-07
+3,2,2025-06-12 16:18:30,1,1,109.95,Fjallraven - Foldsack No. 1 Backpack,men's clothing,109.95,Delivered,2026-05-31T16:18:30.666667,2025-06
+3,2,2025-06-12 16:18:30,5,2,695.0,John Hardy Women's Legends Naga Gold & Silver Dragon Bracelet,jewelery,1390.0,Delivered,2026-05-31T16:18:30.666667,2025-06
+4,3,2025-10-18 16:18:30,7,1,9.99,White Gold Plated Princess,jewelery,9.99,Shipped,2026-05-31T16:18:30.666667,2025-10
+4,3,2025-10-18 16:18:30,8,1,10.99,Pierced Owl Rose Gold Plated Stainless Steel Double,jewelery,10.99,Delivered,2026-05-31T16:18:30.666667,2025-10
+4,3,2025-10-18 16:18:30,14,2,999.99,Samsung 49-Inch CHG90 144Hz Curved Gaming Monitor,electronics,1999.98,Cancelled,2026-05-31T16:18:30.666667,2025-10
+5,4,2025-10-03 16:18:30,3,1,55.99,Mens Cotton Jacket,men's clothing,55.99,Delivered,2026-05-31T16:18:30.666667,2025-10
+5,4,2025-10-03 16:18:30,13,3,599.0,Acer SB220Q bi 21.5 inches Full HD (1920 x 1080) IPS Ultra-Thin,electronics,1797.0,Delivered,2026-05-31T16:18:30.666667,2025-10
+6,5,2025-09-22 16:18:30,5,1,695.0,John Hardy Women's Legends Naga Gold & Silver Dragon Bracelet,jewelery,695.0,Shipped,2026-05-31T16:18:30.666667,2025-09
+6,5,2025-09-22 16:18:30,6,2,168.0,Solid Gold Petite Micropave,jewelery,336.0,Delivered,2026-05-31T16:18:30.666667,2025-09
+7,6,2025-08-10 16:18:30,10,2,109.0,SanDisk SSD PLUS 1TB Internal SSD,electronics,218.0,Cancelled,2026-05-31T16:18:30.666667,2025-08
+7,6,2025-08-10 16:18:30,11,1,109.0,Silicon Power 256GB SSD,electronics,109.0,Delivered,2026-05-31T16:18:30.666667,2025-08
+7,6,2025-08-10 16:18:30,12,1,114.0,WD 4TB Gaming Drive,electronics,114.0,Delivered,2026-05-31T16:18:30.666667,2025-08
+8,7,2025-07-22 16:18:30,15,1,56.99,BIYLACLESEN Women's 3-in-1 Snowboard Jacket,women's clothing,56.99,Shipped,2026-05-31T16:18:30.666667,2025-07
+8,7,2025-07-22 16:18:30,17,3,39.99,Rain Jacket Women Windbreaker Striped Climbing Raincoats,women's clothing,119.97,Delivered,2026-05-31T16:18:30.666667,2025-07
+9,8,2026-05-12 16:18:30,18,5,9.85,MBJ Women's Solid Short Sleeve Boat Neck V,women's clothing,49.25,Shipped,2026-05-31T16:18:30.666667,2026-05
+9,8,2026-05-12 16:18:30,19,2,7.95,Opna Women's Short Sleeve Moisture Tunic,women's clothing,15.9,Processing,2026-05-31T16:18:30.666667,2026-05
+9,8,2026-05-12 16:18:30,20,4,12.99,DANVOUY Womens T Shirt Casual Cotton Short,women's clothing,51.96,Delivered,2026-05-31T16:18:30.666667,2026-05
+10,9,2026-03-06 16:18:30,4,2,15.99,Mens Casual Slim Fit,men's clothing,31.98,Cancelled,2026-05-31T16:18:30.666667,2026-03
+10,9,2026-03-06 16:18:30,2,3,22.3,Mens Casual Premium Slim Fit T-Shirts,men's clothing,66.9,Delivered,2026-05-31T16:18:30.666667,2026-03
+11,10,2025-07-14 16:18:30,13,1,599.0,Acer SB220Q bi 21.5 inches Full HD (1920 x 1080) IPS Ultra-Thin,electronics,599.0,Processing,2026-05-31T16:18:30.666667,2025-07
+11,10,2025-07-14 16:18:30,14,1,999.99,Samsung 49-Inch CHG90 144Hz Curved Gaming Monitor,electronics,999.99,Delivered,2026-05-31T16:18:30.666667,2025-07
+12,3,2026-03-29 16:18:30,1,2,109.95,Fjallraven - Foldsack No. 1 Backpack,men's clothing,219.9,Delivered,2026-05-31T16:18:30.666667,2026-03
+12,3,2026-03-29 16:18:30,9,1,64.0,WD 2TB Elements Portable External Hard Drive,electronics,64.0,Delivered,2026-05-31T16:18:30.666667,2026-03
+12,3,2026-03-29 16:18:30,10,1,109.0,SanDisk SSD PLUS 1TB Internal SSD,electronics,109.0,Delivered,2026-05-31T16:18:30.666667,2026-03
+13,5,2026-01-02 16:18:30,6,1,168.0,Solid Gold Petite Micropave,jewelery,168.0,Delivered,2026-05-31T16:18:30.666667,2026-01
+13,5,2026-01-02 16:18:30,7,2,9.99,White Gold Plated Princess,jewelery,19.98,Cancelled,2026-05-31T16:18:30.666667,2026-01
+13,5,2026-01-02 16:18:30,8,1,10.99,Pierced Owl Rose Gold Plated Stainless Steel Double,jewelery,10.99,Delivered,2026-05-31T16:18:30.666667,2026-01
+14,2,2025-06-16 16:18:30,16,2,29.95,Lock and Love Women's Removable Hooded Faux Leather Moto Biker Jacket,women's clothing,59.9,Delivered,2026-05-31T16:18:30.666667,2025-06
+14,2,2025-06-16 16:18:30,17,1,39.99,Rain Jacket Women Windbreaker Striped Climbing Raincoats,women's clothing,39.99,Cancelled,2026-05-31T16:18:30.666667,2025-06
+15,6,2025-06-15 16:18:30,11,3,109.0,Silicon Power 256GB SSD,electronics,327.0,Shipped,2026-05-31T16:18:30.666667,2025-06
+15,6,2025-06-15 16:18:30,12,2,114.0,WD 4TB Gaming Drive,electronics,228.0,Cancelled,2026-05-31T16:18:30.666667,2025-06

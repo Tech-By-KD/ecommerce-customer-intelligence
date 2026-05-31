@@ -1,0 +1,21 @@
+product_id,product_name,category,price,rating,review_count,description,price_tier,ingested_at
+1,Fjallraven - Foldsack No. 1 Backpack,men's clothing,109.95,3.9,120,Your perfect pack for everyday use and walks in the forest.,Premium,2026-05-31T16:18:30.655612
+2,Mens Casual Premium Slim Fit T-Shirts,men's clothing,22.3,4.1,259,"Slim-fitting style, contrast raglan long sleeve, three-button henley placket.",Budget,2026-05-31T16:18:30.655612
+3,Mens Cotton Jacket,men's clothing,55.99,4.7,500,"Great outerwear jackets for Spring/Autumn/Winter, suitable for many occasions.",Mid-Range,2026-05-31T16:18:30.655612
+4,Mens Casual Slim Fit,men's clothing,15.99,2.1,430,The color could be slightly different between on the screen and in practice.,Budget,2026-05-31T16:18:30.655612
+5,John Hardy Women's Legends Naga Gold & Silver Dragon Bracelet,jewelery,695.0,4.6,400,"From our Legends Collection, the Naga was inspired by the mythical water dragon.",Luxury,2026-05-31T16:18:30.655612
+6,Solid Gold Petite Micropave,jewelery,168.0,3.9,70,Satisfaction Guaranteed. Return or exchange any order within 30 days.,Premium,2026-05-31T16:18:30.655612
+7,White Gold Plated Princess,jewelery,9.99,3.0,400,Classic Created Wedding Engagement Solitaire Diamond Promise Ring.,Budget,2026-05-31T16:18:30.655612
+8,Pierced Owl Rose Gold Plated Stainless Steel Double,jewelery,10.99,1.9,100,Rose Gold Plated Double Flared Tunnel Plug Earrings.,Budget,2026-05-31T16:18:30.655612
+9,WD 2TB Elements Portable External Hard Drive,electronics,64.0,3.3,203,USB 3.0 and USB 2.0 Compatibility Fast data transfers.,Mid-Range,2026-05-31T16:18:30.655612
+10,SanDisk SSD PLUS 1TB Internal SSD,electronics,109.0,2.9,470,"Easy upgrade for faster boot up, shutdown, load times.",Premium,2026-05-31T16:18:30.655612
+11,Silicon Power 256GB SSD,electronics,109.0,4.8,319,3D NAND flash are applied to deliver high transfer speeds.,Premium,2026-05-31T16:18:30.655612
+12,WD 4TB Gaming Drive,electronics,114.0,4.8,400,"Expand your PS4 gaming experience, Play anywhere.",Premium,2026-05-31T16:18:30.655612
+13,Acer SB220Q bi 21.5 inches Full HD (1920 x 1080) IPS Ultra-Thin,electronics,599.0,2.9,250,21. 5 inches Full HD (1920 x 1080) widescreen IPS display.,Luxury,2026-05-31T16:18:30.655612
+14,Samsung 49-Inch CHG90 144Hz Curved Gaming Monitor,electronics,999.99,2.2,140,49 INCH SUPER ULTRAWIDE: 32:9 ratio screen.,Luxury,2026-05-31T16:18:30.655612
+15,BIYLACLESEN Women's 3-in-1 Snowboard Jacket,women's clothing,56.99,2.6,235,"Note: The Jackets is US standard size, Please choose size as your usual wear.",Mid-Range,2026-05-31T16:18:30.655612
+16,Lock and Love Women's Removable Hooded Faux Leather Moto Biker Jacket,women's clothing,29.95,2.9,340,100% POLYURETHANE(shell) 100% POLYESTER(lining).,Mid-Range,2026-05-31T16:18:30.655612
+17,Rain Jacket Women Windbreaker Striped Climbing Raincoats,women's clothing,39.99,3.8,679,Lightweight perfect for trip or casual wear.,Mid-Range,2026-05-31T16:18:30.655612
+18,MBJ Women's Solid Short Sleeve Boat Neck V,women's clothing,9.85,4.7,130,"95% RAYON 5% SPANDEX, Made in USA or Imported.",Budget,2026-05-31T16:18:30.655612
+19,Opna Women's Short Sleeve Moisture Tunic,women's clothing,7.95,4.5,146,"100% Polyester, Machine wash, 100% Polyester.",Budget,2026-05-31T16:18:30.655612
+20,DANVOUY Womens T Shirt Casual Cotton Short,women's clothing,12.99,3.6,145,"95% COTTON, 5% SPANDEX. If you like loose, you can choose one size larger.",Budget,2026-05-31T16:18:30.655612
