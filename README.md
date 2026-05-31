@@ -1,8 +1,8 @@
 # 🛒 Real-Time E-Commerce Data Engineering Pipeline
 
 A complete intermediate-level data engineering project that extracts live data
-from a real REST API, transforms it through a multi-layer pipeline, stores it
-in a SQLite data warehouse, and exports Power BI-ready CSVs with a live terminal dashboard.
+from a real REST API, transforms it through a multi-layer pipeline, and stores it
+in a SQLite data warehouse — directly connected to Power BI via ODBC.
 
 ---
 
@@ -18,35 +18,28 @@ FakeStoreAPI (Real REST API)
    [ TRANSFORM ] ── Flatten · Enrich · RFM Scoring · Aggregations
         │
         ▼
-   [ LOAD ]  ──── SQLite Data Warehouse (4 tables)
+   [ LOAD ]  ──── SQLite Data Warehouse (6 tables)
         │
    ┌────┴────┐
    ▼         ▼
-[CSV Export]  [Live Dashboard]
-(Power BI)   (Rich Terminal)
+[Power BI]  [Live Dashboard]
+(ODBC)      (Rich Terminal)
 ```
 
 ## 📁 Project Structure
 
 ```
-ecommerce_pipeline/
+ecommercecustomerintelligence/
 │
 ├── pipeline.py              ← Main ETL orchestrator
-├── requirements.txt
+├── data_source.py           ← Fallback local dataset
+├── live_dashboard.py        ← Real-time terminal dashboard
 ├── POWERBI_SETUP.py         ← DAX measures + Power BI guide
-│
-├── dashboard/
-│   └── live_dashboard.py    ← Real-time terminal dashboard
+├── requirements.txt
+├── .gitignore
 │
 ├── data/
 │   └── ecommerce.db         ← SQLite warehouse (auto-created)
-│
-├── exports/                 ← Power BI CSVs (auto-generated)
-│   ├── powerbi_customers.csv
-│   ├── powerbi_orders.csv
-│   ├── powerbi_products.csv
-│   ├── powerbi_category_revenue.csv
-│   └── powerbi_monthly_trend.csv
 │
 └── logs/
     └── pipeline.log
@@ -55,28 +48,34 @@ ecommerce_pipeline/
 ## ⚙️ Setup
 
 ```bash
-# 1. Install dependencies
+# 1. Create and activate virtual environment
+python -m venv venv
+venv\Scripts\activate
+
+# 2. Install dependencies
 pip install -r requirements.txt
 
-# 2. Run the pipeline (one-time)
+# 3. Run the pipeline (one-time)
 python pipeline.py
 
-# 3. Run scheduled (every 60 seconds)
+# 4. Run scheduled (every 60 seconds)
 python pipeline.py --schedule --interval 60
 
-# 4. Launch live terminal dashboard
-python dashboard/live_dashboard.py
+# 5. Launch live terminal dashboard
+python live_dashboard.py
 ```
 
 ## 🗄 Data Warehouse Schema
 
-| Table                   | Type      | Description                        |
-|-------------------------|-----------|------------------------------------|
-| `dim_products`          | Dimension | Product catalog with price tiers   |
-| `dim_users`             | Dimension | Customer profiles + segments       |
-| `fact_orders`           | Fact      | Flattened order line items         |
-| `fact_customer_summary` | Fact      | RFM aggregation per customer       |
-| `pipeline_log`          | Audit     | Run history with status + duration |
+| Table                      | Type      | Description                        |
+|----------------------------|-----------|------------------------------------|
+| `dim_products`             | Dimension | Product catalog with price tiers   |
+| `dim_users`                | Dimension | Customer profiles + segments       |
+| `fact_orders`              | Fact      | Flattened order line items         |
+| `fact_customer_summary`    | Fact      | RFM aggregation per customer       |
+| `powerbi_category_revenue` | Aggregate | Revenue + orders by category       |
+| `powerbi_monthly_trend`    | Aggregate | Monthly revenue + order trend      |
+| `pipeline_log`             | Audit     | Run history with status + duration |
 
 ## 📊 Transformations Applied
 
@@ -87,14 +86,27 @@ python dashboard/live_dashboard.py
 - **RFM scoring** — Recency + Frequency + Monetary weighted score
 - **Aggregations** — revenue by category, customer CLV, monthly trend
 
-## 📈 Power BI Dashboard
+## 📈 Power BI Connection (ODBC)
 
-Import the 5 CSV files from `exports/` into Power BI Desktop (free).
-See `POWERBI_SETUP.py` for full step-by-step instructions including:
-- Data type configuration
-- Table relationships
-- 10 DAX measures (Revenue, AOV, Cancellation Rate, MoM Growth…)
-- Recommended visual layout
+Power BI connects directly to `ecommerce.db` via SQLite ODBC — no CSV files needed.
+
+### One-time setup
+1. Download and install the SQLite ODBC driver:
+   👉 https://www.ch-werner.de/sqliteodbc/ → `sqliteodbc_w64.exe`
+
+### Connect in Power BI
+1. Get Data → **ODBC**
+2. Expand **Advanced options** → paste connection string:
+   ```
+   Driver={SQLite3 ODBC Driver};Database=D:\ecommercecustomerintelligence\data\ecommerce.db;
+   ```
+3. Credentials prompt → select **Default or Custom** → Connect
+4. Select all 6 tables in the Navigator → **Load**
+
+### Refresh data
+Re-run `python pipeline.py` then click **Refresh** in Power BI.
+
+See `POWERBI_SETUP.py` for DAX measures, table relationships, and recommended visual layout.
 
 ## 🌐 Data Source
 
@@ -102,3 +114,4 @@ See `POWERBI_SETUP.py` for full step-by-step instructions including:
 - Free, no authentication required
 - Real JSON REST endpoints: `/products`, `/users`, `/carts`
 - 20 products, 10 users, 7 carts with nested product items
+- Falls back to local dataset (`data_source.py`) if API is unavailable
